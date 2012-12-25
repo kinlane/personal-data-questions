@@ -1,11 +1,10 @@
 personal-data-questions
 =======================
 
-<h1>About Personal Data Questions</h1>
+<h1><a href="http://personaldata.apievangelist.com/" target="_blank">About Personal Data Questions</a></h1>
 
-<p>This is a side project of <a href="http://kinlane.com/">Kin Lane</a>, feel free reach out if you have any questions.</p>
-<p>This project is one of my open side projects.  Feel free to ask your questions, and share your own solutions.</p>
-<p>Since the project is hosted on Github as an open source repository, you are welcome to fork and make contributions.  Or if you want to contribute at a more basic level you can use the Disqus comments available on the bottom of each page or via one of the social network icons in the header.</p>
+<p>This is a side project of <a href="http://kinlane.com/">Kin Lane</a>, feel free to ask your questions, and share your own solutions.</p>
+<p>Since the project is hosted on <a href="http://personaldata.apievangelist.com/" target="_blank"></a>Github as an open source repository, you are welcome to fork and make contributions.  Or if you want to contribute at a more basic level you can use the Disqus comments available on the bottom of each page or via one of the social network icons in the header.</p>
 <p>As with all my side projects, personal data questions is a work in progress, so stay tuned!</p>
 <hr />
 <p>The end of the year is a great time to reflect--a time to ask a lot of questions about ourselves, looking back at the year with a desire to quantify and understand ourselves. </p>
