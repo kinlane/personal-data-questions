@@ -124,35 +124,59 @@
 <body class="home blog two-col-left width-940 two-col-left-940">
 
 <div id="wrapper">
-    
     <div id="header" class="col-full">
         <div id="logo">
             
-            <a href="/index.php" title=""><img src="http://kinlane-productions.s3.amazonaws.com/hackweekends/hackweekends-logo.png"></a>
+            <a href="" title=""><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist/api-evangelist-logo-400.png"></a>
 
-        </div> 
-        
-    </div>
+        </div><!-- /#logo -->
+
+    </div><!-- /#header -->
     
     <div id="navigation" class="col-full">
 
         <ul id="main-nav" class="nav fl">
-            <li class="{% if page.title == 'Hack Weekends' %}page_item current_page_item{% else %}page_item page-item-2{% endif %}"><a href="/index.html" title="Home">Home</a></li>
-            <li class="{% if page.title == 'Hackathons' %}page_item current_page_item{% else %}page_item page-item-2{% endif %}"><a href="/hackathons.html" title="Home">Hackathons</a></li>
-            <li class="{% if page.title == 'Cities' %}page_item current_page_item{% else %}page_item page-item-2{% endif %}"><a href="/cities.html" title="News">Cities</a></li>
-            <li class="{% if page.title == 'Hack Weekends Blog' %}page_item current_page_item{% else %}page_item page-item-2{% endif %}"><a href="/blog.html" title="Blog">Blog</a></li>
-            <li class="{% if page.title == 'Hack Weekends News' %}page_item current_page_item{% else %}page_item page-item-2{% endif %}"><a href="/news.html" title="News">News</a></li>
-            <li class="{% if page.title == 'About Hack Weekends' %}page_item current_page_item{% else %}page_item page-item-2{% endif %}"><a href="/about.html" title="About">About</a></li>
-        </ul>
+            <li class="<?php if($Section == "Home") { ?>page_item current_page_item<?php } else { ?>page_item page-item-2<?php } ?>"><a href="/index.php" title="Home">API 101</a></li>
+            <li class="<?php if($Section == "Blog") { ?>page_item current_page_item<?php } else { ?>page_item page-item-2<?php } ?>"><a href="/blog/" title="Blog">Blog</a></li>
+            <li class="<?php if($Section == "News") { ?>page_item current_page_item<?php } else { ?>page_item page-item-2<?php } ?>"><a href="/news/" title="News">News</a></li>
+            <!--<li class="<?php if($Section == "Industries") { ?>page_item current_page_item<?php } else { ?>page_item page-item-2<?php } ?>"><a href="/industries/" title="Industries">Industries</a></li>-->
+            <li class="<?php if($Section == "Building Blocks") { ?>page_item current_page_item<?php } else { ?>page_item page-item-2<?php } ?>"><a href="/buildingblocks/" title="Building Blocks">Building Blocks</a></li>
+            <li class="<?php if($Section == "Service Providers") { ?>page_item current_page_item<?php } else { ?>page_item page-item-2<?php } ?>"><a href="/serviceproviders/" title="Service Providers">Service Providers</a></li>
+            <li class="<?php if($Section == "Tools") { ?>page_item current_page_item<?php } else { ?>page_item page-item-2<?php } ?>"><a href="/apitools/" title="Tools">Tools</a></li>
+            <li class="<?php if($Section == "Events") { ?>page_item current_page_item<?php } else { ?>page_item page-item-2<?php } ?>"><a href="/events/" title="Events">Hackathons</a></li>
+            <li class="<?php if($Section == "History") { ?>page_item current_page_item<?php } else { ?>page_item page-item-2<?php } ?>"><a href="/history/" title="History">History</a></li>
+            <li class="<?php if($Section == "Trends") { ?>page_item current_page_item<?php } else { ?>page_item page-item-2<?php } ?>"><a href="/trends/" title="Trends">Trends</a></li>
+        
+            <li class="<?php if($Section == "Contact") { ?>page_item current_page_item<?php } else { ?>page_item page-item-2<?php } ?>"><a href="http://kinlane.com/contact/" title="Contact">Contact</a></li>
+        </ul><!-- /#nav -->
         
         <ul class="rss fr">
-            
-            <li class="sub-rss">         
-            
-                <a href="http://feeds.feedburner.com/HackWeekendsBlog" target="_blank">
-                    <img src="images/rss.png" />
+            <li class="sub-rss">
+                <?php if($Section=='Curated') { ?>
+                    <a href="http://feeds.feedburner.com/APIEvangelistNews" target="_blank">
+                        <img src="http://kinlane-productions.s3.amazonaws.com/icon-set-roundedcorners/rss.png" />
+                    </a>                
+                <?php } else { ?>
+                <a href="http://feeds.feedburner.com/ApiEvangelist" target="_blank">
+                        <img src="http://kinlane-productions.s3.amazonaws.com/icon-set-roundedcorners/rss.png" />
+                    </a>
+                <?php } ?>              
+            </li>
+            <li class="sub-rss">                
+                <a href="https://twitter.com/#!/kinlane" target="_blank">
+                    <img src="http://kinlane-productions.s3.amazonaws.com/icon-set-roundedcorners/twitter.png" />
                 </a>
-            </li>          
+            </li>
+            <li class="sub-rss">
+                <a href="http://www.linkedin.com/in/kinlane" target="_blank">
+                    <img src="http://kinlane-productions.s3.amazonaws.com/icon-set-roundedcorners/linkedin.png" />
+                </a>
+            </li>
+            <li class="sub-rss">
+                <a href="https://plus.google.com/106460238807821851374" target="_blank">
+                    <img src="http://kinlane-productions.s3.amazonaws.com/icon-set-roundedcorners/google.png" />
+                </a>
+            </li>           
         </ul>
 
     </div><!-- /#navigation -->
@@ -199,26 +223,13 @@
                 <div class="widget widget_recent_entries">  
                 
                     <h3>Partner Sites</h3>  
-        
-                    <center>
-                        <a href="http://www.programmableweb.com/" target="_blank" title="ProgrammableWeb">
-                            <img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist/programmableweb-logo.png" width="150" />
-                        </a>
-                        <br /><br />
-                    </center>           
+                
                     <center>
                         <a href="http://www.3scale.net" target="_blank" title="3Scale">
                             <img src="http://kinlane-productions.s3.amazonaws.com/api-service-providers/3scale-logo.jpg" width="200" />
                         </a>            
                         <br /><br />
                     </center>
-                    <center>
-                        <a href="http://wso2.com/products/api-manager/" target="_blank" title="WSO2">
-                            <img src="https://s3.amazonaws.com/kinlane-productions/api-service-providers/wso2/wso2-logo-white-800X360.jpg" width="150" />
-                        </a>            
-                        <br /><br />
-                    </center>           
-                
             
                 </div>
             
